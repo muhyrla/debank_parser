@@ -22,7 +22,7 @@ if __name__ == "__main__":
         wallets = f.readlines()
         all_networth = 0.0
         for wallet in wallets:
-            wallet = wallets[0].replace('\n', '')
+            wallet = wallet.replace('\n', '')
             networth = get_balance(wallet)
             print(f'{wallet} networth: {networth}')
             all_networth+=networth
